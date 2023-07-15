@@ -11,7 +11,7 @@ $link = mysqli_connect("localhost", "root", "", "users");
 
 if (!$link)
 {
-    mysqli_connect_error();
+    die("Ошибка подключения: " . mysqli_connect_error());
 }
 
 $sql = "SELECT email, password FROM users WHERE email='" . $email . "' AND password='" . $password . "'";

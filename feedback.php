@@ -9,18 +9,20 @@
 </head>
 
 <body>
+<?php session_start(); if(isset($_SESSION['email']) && !empty($_SESSION['email']))
+    print('
     <div class="container bg-light text-dark rounded" id="form1">
         <div class="container">
             <br>
             <div class="row">
-                <form action="" method="post" class="col">
+                <form action="receive.php" method="post" class="col">
                     <div class="form-group">
                         <label for="title"><h5>Заголовок</h5></label>
                         <input type="text" name="title" class="form-control-plaintext col rounded" id="text" required>
                     </div>
                     <div class="form-group">
                         <label for="editor1"><h5>Отзыв</h5></label>
-                        <textarea class="form-control-plaintext col rounded" rows="5" name="editor1" id="text"></textarea>
+                        <textarea class="form-control-plaintext col rounded" rows="5" name="text" id="text"></textarea>
                     </div>
                     <hr>
                     <div class="form-group">
@@ -53,7 +55,11 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div>');
+else {
+    print('<h1 id="denied"> Access denied! </h1>');
+    header("Location: index.php");
+}
+?>
 </body>
-
 </html>
