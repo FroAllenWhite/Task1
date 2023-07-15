@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+}
+
+body {
+    background-color: grey;
+    background-size: 100%;
+}
+
+#form {
+    border: solid black 1px;
+    width: 50vh;
+    margin-top: 25vh;
+}
+
+.button {
+    border: solid black 1px;
+    text-align: center;
+    width: 120px;
+    height: 40px;
+}
+
+.button:hover {
+    color: blue;
+}
+
+#text {
+    border: 1px solid #000000;
+}
+
+label {
+    color: black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+input {
+    margin-top: 5px;
+    margin-right: 5px;
+}
