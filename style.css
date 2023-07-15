@@ -13,6 +13,11 @@ body {
     width: 50vh;
     margin-top: 25vh;
 }
+#form1 {
+    border: solid black 1px;
+    width: 80vh;
+    margin-top: 10vh;
+}
 
 .button {
     border: solid black 1px;

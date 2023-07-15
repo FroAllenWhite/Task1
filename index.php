@@ -9,21 +9,21 @@
 </head>
 
 <body>
-<div class="container bg-light text-dark rounded" id="form">
-    <a href="#" class="navbar-brand">Авторизация</a>
-    <hr>
-    <form action="login.php">
-        <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-        </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        </div>
-        <button class="btn btn-primary">Войти</button>
-    </form>
-</div>
+    <div class="container bg-light text-dark rounded" id="form">
+        <a href="#" class="navbar-brand">Авторизация</a>
+        <hr>
+        <form action="login.php" method="post">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <button class="btn btn-primary">Войти</button>
+        </form>
+    </div>
 </body>
 
 </html>
